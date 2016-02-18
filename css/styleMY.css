@@ -1,0 +1,279 @@
+html,
+body {
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.footer-copyright,
+.user-block,
+.index-content-right,
+.item-article,
+.buy-button {
+  float: right;
+}
+
+.main-navigation,
+.features-item,
+.index-content-left,
+.footer-contacts,
+.footer-social,
+.availability {
+    float: left;
+}
+
+body {
+  background: #000000 url("../img/bg.jpg") no-repeat 50% 3px;
+  background-size: 1122px auto;
+}
+.no-bg {
+  background-image: none;
+  background-color: black;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mini-logo {
+  width: 115px;
+  height: 30px;
+  background: url('../img/borodinski-mini-logo.png') no-repeat;
+}
+
+ul{
+  list-style: none;
+}
+
+.bread-crumbs li:last-of-type {
+  color: #aba9a7;
+}
+
+.main-navigation li,
+.bread-crumbs li,
+.select-section,
+.showcase,
+.page-selector li,
+.shop-item,
+.item-pics,
+.item-info,
+.info-middle ul,
+.info-middle table,
+.info-bottom-1,
+.info-bottom-2 {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  border: 2px solid white;
+}
+
+a,
+.btn {
+  width: 140px;
+  height: 45px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+.select-section {
+  width: 190px;
+  height: 615px;
+}
+.showcase {
+  width: 710px;
+  height: 615px;
+}
+
+.shop-item {
+  width: 220px;
+  height: 290px;
+  text-align: left;
+  padding: 0;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 18px;
+  background: white;
+  margin: 0 10px 10px 0;
+  box-shadow:0 0 5px 3px #e0ddda;
+}
+.shop-item img {
+  width: 220px;
+  height: 170px;
+  margin-bottom: 15px;
+}
+.shop-item a:not(.btn) {
+  color: black;
+  background: none;
+}
+.shop-item a:nth-child(2) {
+  display: inline-block;
+  margin:0 15px 0 0;
+  padding-left: 20px;
+}
+.item-price {
+  width: 180px;
+  height: 45px;
+  box-sizing: border-box;
+  line-height: 45px;
+  padding-left: 35px;
+  background-color: #e5e5e5;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buy-button {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  height: 45px;
+}
+
+.shop-main {
+  background: url('../img/light-bg-cut.jpg');
+  color: black;
+  width: 950px;
+  padding: 60px 125px 30px 125px;
+}
+.page-selector {
+  padding-left: 300px;
+}
+.page-selector li {
+  width: 40px;
+  text-align: center;
+  line-height: 16px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+.page-selector li:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+
+.item-info {
+  width: 300px;
+  margin-left: 40px;
+  padding-left: 20px;
+}
+.item-info ul {
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-navigation {
+  width: 780px;
+
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
+
+.user-block {
+  width: 100px;
+  background: url('../img/icon-login.png') no-repeat;
+  padding-left: 27px;
+  margin-top: 20px;
+
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  width: 300px;
+  margin-right: 20px;
+
+  /* Только для оформления сетки */
+  min-height: 175px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  background: url('../img/light-bg-cut.jpg') repeat;
+  color: black;
+}
+
+.index-content-left {
+  width: 380px;
+
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.index-content-right {
+  width: 300px;
+
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin-right: 60px;
+
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.footer-social {
+  width: 180px;
+
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.footer-copyright {
+  width: 180px;
+
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+  height: 70px;
+  background-color: #000000;
+}
+
+footer {
+  height: 190px;
+  background-color: #242424;
+}
+.item-article {
+  color: #aba9a7;
+}
