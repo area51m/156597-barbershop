@@ -7,12 +7,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
-  <body class="no-bg">
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
+        <a class="logo-inner" href="index.html">
+            <img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+          </a>
           <ul>
-            <li class="mini-logo"></li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -20,10 +22,10 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a href="price.html">Прайс-лист</a>
             </li>
-            <li>
-              <a href="#">Магазин</a>
+            <li class="active">
+              <span>Магазин</span>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -31,24 +33,24 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#">ВХОД</a>
+          <a class="login" href="login.html">Вход</a>
         </div>
       </div>
     </header>
     <main class="shop-main container">
-      <h2>Набор для путешествий "BAXTER OF CALIFORNIA"</h2>
-      <ul class="bread-crumbs">
-        <li><a href="#">ГЛАВНАЯ</a></li>
-        <li><a href="#">МАГАЗИН</a></li>
+      <h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">ГЛАВНАЯ</a></li>
+        <li><a href="shop.html">МАГАЗИН</a></li>
         <li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
-        <li>Набор для путешествий "BAXTER OF CALIFORNIA"</li>
+        <li class="current">Набор для путешествий "BAXTER OF CALIFORNIA"</li>
       </ul>
       <section class="item-pics">
-        <img src="img/item-big-img.jpg" width="400" height="400" alt="Фото товара">
+        <img src="img/item-big-img.jpg" width="460" height="500" alt="Фото товара">
           <div class="3-in-raw">
-            <img src="img/item-small1.jpg" width="100" height="100" alt="Фото товара">
-            <img src="img/item-small2.jpg" width="100" height="100" alt="Фото товара">
-            <img src="img/item-small3.jpg" width="100" height="100" alt="Фото товара">
+            <img src="img/item-small1.jpg" width="140" height="150" alt="Фото товара">
+            <img src="img/item-small2.jpg" width="140" height="150" alt="Фото товара">
+            <img src="img/item-small3.jpg" width="140" height="150" alt="Фото товара">
           </div>
       </section>
       <section class="item-info">
@@ -60,9 +62,9 @@
           В АККУРАТНОЙ КОЖАННОЙ СУМКЕ НАХОДИТСЯ ВСЕ, ЧТО НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ
           ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ ИЛИ ОТДЫХА: СРЕДСТВА ДЛЯ УМЫВАНИЯ, УВЛАЖНЯЮЩИЙ КРЕМ, КРЕМ ДЛЯ БРИТЬЯ,
           КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ. НАБОР ТАК ЖЕ МОЖЕТ СТАТЬ ОТЛИЧНЫМ ПОДАРКОМ.</p>
-        <div class="item-price">2900 руб.<a class="btn buy-button" href="#">КУПИТЬ</a>
+        <div class="item-price">2900 руб.<a class="btn buy-button" href="#">КУПИТЬ</a></div>
         <ul>
-          <h3>В НАБОР ВХОДЯТ:</h3>
+          <h2>В НАБОР ВХОДЯТ:</h2>
           <li>СРЕДСТВО ДЛЯ УМЫВАНИЯ (50МЛ)</li>
           <li>УВЛАЖНЯЮЩИЙ КРЕМ (50МЛ)</li>
           <li>КРЕМ ДЛЯ БРИТЬЯ (50МЛ)</li>
@@ -93,5 +95,27 @@
         </section>
       </div>
     </footer>
+     <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин" required>
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль" required>
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>      
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

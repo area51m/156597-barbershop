@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
-    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
@@ -24,8 +24,8 @@
             <li>
               <a href="price.html">Прайс-лист</a>
             </li>
-            <li>
-              <a href="shop.html">Магазин</a>
+            <li class="active">
+              <span>Магазин</span>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -33,29 +33,38 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#">ВХОД</a>
+          <a class="login" href="login.html">ВХОД</a>
         </div>
       </div>
     </header>
     <main class="shop-main container">
-      <h2 class="product-group">СРЕДСТВА ДЛЯ УХОДА</h2>
+      <h1 class="product-group">СРЕДСТВА ДЛЯ УХОДА</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">ГЛАВНАЯ</a></li>
         <li><a href="#">МАГАЗИН</a></li>
         <li class="current">СРЕДСТВА ДЛЯ УХОДА</li>
       </ul>
-      <form class="select-section">
-        <h3 class="section-part-name">ПРОИЗВОДИТЕЛИ:</h3>
-        <label><input class="checkbox" type="checkbox" name="manufacturer" value="BAXTER OF CALIFORNIA" checked>BAXTER OF CALIFORNIA</label><br>
-        <label><input class="checkbox" type="checkbox" name="manufacturer" value="MR NATTY">MR NATTY</label><br>
-        <label><input class="checkbox" type="checkbox" name="manufacturer" value="SUAVECITO" checked>SUAVECITO</label><br>
-        <label><input class="checkbox" type="checkbox" name="manufacturer" value="MARLIN+GOETZ">MARLIN+GOETZ</label><br>
-        <label><input class="checkbox" type="checkbox" name="manufacturer" value="MURRAY'S">MURRAY'S</label><br>
-        <label><input class="checkbox" type="checkbox" name="manufacturer" value="AMERICAN CREW" checked>AMERICAN CREW</label><br>
-        <h3 class="section-part-name">ГРУППЫ ТОВАРОВ</h3>
-        <label><input class="radio" type="radio" name="item-group" value="shave-group">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label><br>
-        <label><input class="radio" type="radio" name="item-group" value="care-group">СРЕДСТВА ДЛЯ УХОДА</label><br>
-        <label><input class="radio" type="radio" name="item-group" value="accessories-group">АКСЕССУАРЫ</label><br>
+      <form class="select-section" method="post">
+        <h2 class="section-part-name">ПРОИЗВОДИТЕЛИ:</h2>
+        <input id="cb1" type="checkbox" name="manufacturer" value="BAXTER OF CALIFORNIA" checked>
+        <label for="cb1">BAXTER OF CALIFORNIA</label><br>
+        <input id="cb2" type="checkbox" name="manufacturer" value="MR NATTY">
+        <label for="cb2">MR NATTY</label><br>
+        <input id="cb3" type="checkbox" name="manufacturer" value="SUAVECITO" checked>
+        <label for="cb3">SUAVECITO</label><br>
+        <input id="cb4" type="checkbox" name="manufacturer" value="MARLIN+GOETZ">
+        <label for="cb4">MARLIN+GOETZ</label><br>
+        <input id="cb5" type="checkbox" name="manufacturer" value="MURRAY'S">
+        <label for="cb5">MURRAY'S</label><br>
+        <input id="cb6" type="checkbox" name="manufacturer" value="AMERICAN CREW" checked>
+        <label for="cb6">AMERICAN CREW</label>
+        <h2 class="section-part-name">ГРУППЫ ТОВАРОВ</h2>
+        <input id="ra1" class="radio" type="radio" name="item-group" value="shave-group">
+        <label for="ra1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label><br>
+        <input id="ra2" class="radio" type="radio" name="item-group" value="care-group" checked>
+        <label for="ra2">СРЕДСТВА ДЛЯ УХОДА</label><br>
+        <input id="ra3" class="radio" type="radio" name="item-group" value="accessories-group">
+        <label for="ra3">АКСЕССУАРЫ</label>
         <button class="btn select-section-btn">ПОКАЗАТЬ</button>
       </form>
       <section class="showcase">
@@ -97,7 +106,7 @@
       </section>
       <ul class="page-selector">
         <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
+        <li class="page-active"><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
       </ul>
@@ -122,5 +131,27 @@
         </section>
       </div>
     </footer>
+     <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин" required>
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль" required>
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>      
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
